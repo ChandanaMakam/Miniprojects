@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.bg {
+    background: url("https://images.pexels.com/photos/1166473/pexels-photo-1166473.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") no-repeat center center/cover ;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    filter : blur(30px);
+}
+
+.bg.blur {
+  filter : blur(0px);
+  transition: filter 2s ease-in-out;
+}
+.loading-text {
+    font-size: 50px;
+    color: grey;
+}
+
+.loading-text.blur {
+  filter : blur(30px);
+}
