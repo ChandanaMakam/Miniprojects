@@ -7,10 +7,21 @@
 body {
   font-family: 'Roboto', sans-serif;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  background-color: lightpink;
+}
+
+button {
+    background-color: rgb(188, 69, 115);
+    border: none;
+    margin: 1rem;
+    padding: 1.5rem;
+    color: aliceblue;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    font-size: 1rem;
 }
