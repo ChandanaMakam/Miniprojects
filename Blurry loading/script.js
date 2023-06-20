@@ -11,8 +11,8 @@ function incrementCounter() {
        
        else {
         clearInterval(counter); // Stop the interval once the counter reaches 100
-        text.idList.add ("blur");
-        bg.idList.add("blur");
+        text.classList.add ("blur");
+        bg.classList.add("blur");
        
       }   
   }
