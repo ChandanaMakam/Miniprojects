@@ -31,8 +31,9 @@ width: 30px;
 position: absolute;
 border-radius: 50%;
 
-transform: translate(-50% ,-50%);scale: 0; 
+transform: translate(-50% ,-50%) scale(0); 
 animation: scale 0.5s ease-in;
+
 }
 
 @keyframes scale {

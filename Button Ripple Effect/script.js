@@ -1,5 +1,5 @@
 const button = document.querySelector("button");
-button.addEventListener("click", e => {
+button.addEventListener("click", function (e) {
     console.log("check");
     const x = e.clientX;
     const y = e.clientY;
@@ -9,7 +9,9 @@ button.addEventListener("click", e => {
     const yInside = y - buttonTop;
     const circle = document.createElement("span");
     circle.classList.add ("circle");
-    document.append("circle");
+    circle.style.top = yInside +'px';
+    circle.style.left = xInside+'px';
+     this.appendChild(circle);
     setTimeout(() => circle.remove(), 500);
 
 
